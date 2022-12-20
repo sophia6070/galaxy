@@ -31,6 +31,15 @@ body {
   background-color: transparent;
 }
 
+.btn.small {
+  font-size: 14px;
+  height: 36px;
+  width: 120px;
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
 .center_box {
   width: 1200px;
   margin: 0 auto;
@@ -140,4 +149,71 @@ body {
 .slide .slide_text h2 b {
   font-size: 70px;
   font-weight: 800;
+}
+
+/* product_01 */
+.product_01 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_01 li {
+  background-color: #f5f5f5;
+  width: 560px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.product_01 li .photo {
+  width: 228px;
+  height: 160px;
+  position: relative;
+}
+
+.product_01 li .photo img {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product_01 li .photo .first {
+  opacity: 1;
+  transition: all 0.6s;
+}
+
+.product_01 li .photo .second {
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.product_01 li:hover .photo .first {
+  opacity: 0;
+}
+
+.product_01 li:hover .photo .second {
+  opacity: 1;
+}
+
+.product_01 .detail h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.product_01 .detail p {
+  color: #666;
+  padding-top: 16px;
+  padding-bottom: 35px;
+}
+
+/* .product_02  */
+.product_02 {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.product_02 li {
 }
